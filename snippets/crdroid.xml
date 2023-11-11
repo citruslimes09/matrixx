@@ -12,6 +12,9 @@
            sync-c="true"
            sync-j="4"
            revision="refs/heads/14.0" />
+  
+  <remote  name="gitl"
+           fetch="https://gitlab.com" />
 
   <!-- crDroid additions -->
   <project path="android" name="crdroidandroid/android" remote="crdroid" />
@@ -60,7 +63,7 @@
 
   <project path="prebuilts/build-tools" name="crdroidandroid/android_prebuilts_build-tools" groups="pdk" remote="crdroid" />
   <!-- Clang 17.0.4 -->
-  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-r498229b" remote="crdroid-gitlab" />
+  <project path="prebuilts/clang/host/linux-x86/clang-latest" name="magchuzPM/clang-r498229b" remote="gitl" revision="master" />
 
   <project path="system/core" name="crdroidandroid/android_system_core" groups="pdk" remote="crdroid" />
   <project path="system/extras" name="crdroidandroid/android_system_extras" groups="pdk" remote="crdroid" />
